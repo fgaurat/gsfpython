@@ -7,3 +7,6 @@ def fib(n):    # write Fibonacci series up to n
         print(a, end=' ')
         a, b = b, a+b
         print()
+
+
+fib(2000)
