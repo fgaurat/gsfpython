@@ -9,6 +9,12 @@ def test_args_dict(**arr):
 
 
 def test_args_dict2(param1,*arr_pos,**arr_dict):
+    """ une fonction :
+
+    param1 : 
+    *arr_pos : 
+    **arr_dict
+    """
     print(arr_pos)
     print(arr_dict)
 
@@ -18,3 +24,5 @@ def test_args_dict2(param1,*arr_pos,**arr_dict):
 # test_args_dict(nom="DUPONT",prenom="Robert")
 
 test_args_dict2("val_1","val_2","val_3",nom="DUPONT",prenom="Robert")
+
+print(test_args_dict2.__doc__)
