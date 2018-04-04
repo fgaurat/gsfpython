@@ -8,5 +8,19 @@ def fib(n):    # write Fibonacci series up to n
         a, b = b, a+b
     print()
 
+def fib2(n):    # write Fibonacci series up to n
+    """Return a Fibonacci series up to n."""
+    a, b = 0, 1
+    result = []
+    while a < n:
+        result.append(a)
+        a, b = b, a+b
+    
+    return result
 
-fib(2000)
+
+t = fib(2000)
+print(type(t))
+
+f = fib2(100)
+print(f)
