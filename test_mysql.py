@@ -4,9 +4,13 @@ from mysql.connector import errorcode
 import configparser
 
 if __name__ == "__main__":
+    parser = argparse.ArgumentParser()
+    parser.add_argument('config_file',help='indiquez le fichier de configuration')
+
+    args = parser.parse_args()
 
     config = configparser.ConfigParser()
-    config.read('config.ini')
+    config.read(args.config_file)
 
     dict_config = {
         'user': config['DATABASE']['user'],
@@ -14,7 +18,7 @@ if __name__ == "__main__":
         'host': config['DATABASE']['host'],
         'database': config['DATABASE']['database']
     }
-    
+
     test_dict_conf = {}
     for k in config['DATABASE']:
         test_dict_conf[k] = config['DATABASE'][k]
