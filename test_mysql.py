@@ -14,13 +14,15 @@ if __name__ == "__main__":
         'host': config['DATABASE']['host'],
         'database': config['DATABASE']['database']
     }
-
+    
+    test_dict_conf = {}
     for k in config['DATABASE']:
-        print(k)
+        test_dict_conf[k] = config['DATABASE'][k]
+
 
     cnx = cur = None
     try:
-        cnx = mysql.connector.connect(**dict_config)
+        cnx = mysql.connector.connect(**test_dict_conf)
     except mysql.connector.Error as err:
         if err.errno == errorcode.ER_ACCESS_DENIED_ERROR:
             print('Something is wrong with your user name or password')
