@@ -13,6 +13,9 @@ http://ns349423.ip-94-23-40.eu:8080/
 ##admin mysql
 http://ns349423.ip-94-23-40.eu:8080/adminer.php
 
+user:admin
+passw:mypass
+
 
 ##SQL
 ```
