@@ -15,6 +15,8 @@ if __name__ == "__main__":
         'database': config['DATABASE']['database']
     }
 
+    for k in config['DATABASE']:
+        print(k)
 
     cnx = cur = None
     try:
