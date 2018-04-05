@@ -8,6 +8,9 @@ https://docs.python.org/fr/3.6/library/xml.etree.elementtree.html
 ##argparse
 https://docs.python.org/3/library/argparse.html
 
+##Logging
+https://docs.python.org/3/howto/logging.html#logging-basic-tutorial
+
 ##Server
 http://ns349423.ip-94-23-40.eu:8080/
 ##admin mysql
